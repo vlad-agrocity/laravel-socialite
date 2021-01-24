@@ -26,7 +26,7 @@ Route::get('/dashboard', function () {
 
 Route::get('/google/login', [SocialiteController::class, 'googleLogin'])->name('google.login');
 
-Route::get('/google/login/callback', [SocialiteController::class, 'googleLoginCallback'])->name('google.login.callback');
+Route::get('/google/login/callback', [SocialiteController::class, 'googleLoginCallback']);
 
 
 
